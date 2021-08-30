@@ -8,7 +8,7 @@
   
   /* Style the header */
   header {
-    background-color: rgba(15, 96, 128, 0.705);
+    background-color: rgb(158, 76, 76);
     padding: 30px;
     text-align: center;
     font-size: 80%;
@@ -47,7 +47,7 @@
   
   /* Style the footer */
   footer {
-    background-color: rgba(15, 96, 128, 0.705);
+    background-color: rgb(158, 76, 76);
     padding: 10px;
     text-align: center;
     color: white;
