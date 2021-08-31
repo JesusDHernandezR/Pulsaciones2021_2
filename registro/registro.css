@@ -1,0 +1,11 @@
+#posicion{
+    margin-right: 6.5%;
+    position: relative;
+    left: 6.5%;         
+}
+select{
+    position: relative;
+    top: 0.2em;
+    right: 1%;
+    font-size: 12px;
+}

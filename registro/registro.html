@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematicas para niños</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="./registro.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calculando tu pulsacion</h1>
+    </header>
+    <nav>
+        <ul>
+            <a href="../index.html">
+                <li>Inicio</li>
+            </a>
+            <a href="registro.html">
+                <li>Registro</li>
+            </a>
+            <a href="../infopulsacion/info.html">
+                <li>Consulta</li>
+            </a>
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <form>
+                <select name="" id="sexoSeleccionado">
+                    <option>
+                        Sexo
+                    </option>
+                    <option>
+                        m
+                    </option>
+                    <option>
+                        f
+                    </option>
+                </select>
+                <br>
+                <label>
+                    Identificacion
+                </label>
+                <input id="identificacion" type="text" />
+                <br>
+                <label>
+                    Nombre
+                </label>
+                <input id="nombre" type="text" />
+                <br>                
+                <label>
+                    Edad
+                </label>
+                <input id="edad" type="number" />
+                <br>
+                <br>
+                <button type="button" onclick="operacion()">Calcular</button>
+                <br>
+                <br>
+                <label>
+                    Pulsacion
+                </label>
+                <input id="pulsacion" type="number" />
+            </form>
+        </article>
+    </section>
+    <footer>
+        <p>Para más informacion: <a
+                href="https://api.whatsapp.com/send?phone=573043484870&app=facebook&entry_point=page_cta">
+                <li>WHATSAPP</li>
+            </a></p>
+    </footer>
+    <script>
+        function operacion() {
+            var op = document.getElementById("sexoSeleccionado").value;            
+            var edad = document.getElementById("edad").value;
+            var pulsacion;
+            if (op === "f") {
+                CalcularPulsacionFemenina(edad);
+            } else if (op === "m") {
+                CalcularPulsacionMasculina(edad);
+            } else {
+                console.error("error");
+            }
+            document.getElementById("pulsacion").value = pulsacion;
+        }
+        function CalcularPulsacionFemenina(edad) {
+            var pulsacion = parseInt(220) - parseInt(edad) / parseInt(10);
+            return pulsacion;
+        }
+        function CalcularPulsacionMasculina(edad) {
+            var pulsacion = parseInt(210) - parseInt(edad) / parseInt(10);
+            return pulsacion;
+        }
+    </script>
+
+</body>
+
+</html>
