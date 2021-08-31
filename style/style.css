@@ -75,12 +75,16 @@
     top: 130px;
   }
   .imagenPulsacion{
-     margin-left: 250px;
+     margin-left: 20px;
     margin-right: 46px;  
-    margin-top: 47px;      
-             
+    margin-top: -10px;        
+    position: relative;            
+    right: -5em;
   }
   table{
     border-style: ridge;      
     font-size: 20px;    
+  }
+  article{
+        background-color: silver;
   }
