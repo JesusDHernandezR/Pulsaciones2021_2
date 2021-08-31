@@ -51,7 +51,7 @@
                     Nombre
                 </label>
                 <input id="nombre" type="text" />
-                <br>                
+                <br>
                 <label>
                     Edad
                 </label>
@@ -76,13 +76,13 @@
     </footer>
     <script>
         function operacion() {
-            var op = document.getElementById("sexoSeleccionado").value;            
+            var op = document.getElementById("sexoSeleccionado").value;
             var edad = document.getElementById("edad").value;
             var pulsacion;
             if (op === "f") {
-                CalcularPulsacionFemenina(edad);
+                pulsacion = CalcularPulsacionFemenina(edad);
             } else if (op === "m") {
-                CalcularPulsacionMasculina(edad);
+                pulsacion = CalcularPulsacionMasculina(edad);
             } else {
                 console.error("error");
             }
