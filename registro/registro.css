@@ -1,11 +1,36 @@
-#posicion{
-    margin-right: 6.5%;
+#labelnombre{
+    margin-right: 5.5%;
     position: relative;
-    left: 6.5%;         
+    left: 5.3%;         
+} 
+
+#labelidentificacion{
+    margin-right: 2.7%;
+    position: relative;
+    left: 2.5%;         
+} 
+#labeledad{
+    margin-right: 7.1%;
+    position: relative;
+    left: 6.8%;        
+}   
+
+#labelpulsacion{
+    margin-right: 4.8%;
+    position: relative;
+    left: 4.5%;         
 }
 select{
     position: relative;
-    top: 0.2em;
-    right: 1%;
-    font-size: 12px;
+    top: 0.7em;
+    right: -4%;
+    font-size: 14px;
+}
+button{
+    position: relative;
+    right: -15%;
+    top: 0.5em;
+}
+label{
+    
 }

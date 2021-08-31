@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matematicas para niños</title>
+    <title>Calcula tu pulsacion</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="./registro.css">
 </head>
@@ -29,7 +29,22 @@
     </nav>
     <section>
         <article>
-            <form>
+            <form>                         
+                <label id="labelidentificacion">
+                    Identificacion
+                </label>
+                <input id="identificacion" type="text" />
+                <br>
+                <label id="labelnombre">
+                    Nombre
+                </label>
+                <input id="nombre" type="text" />
+                <br>
+                <label id="labeledad">
+                    Edad
+                </label>
+                <input id="edad" type="number" />
+                <br>
                 <select name="" id="sexoSeleccionado">
                     <option>
                         Sexo
@@ -42,26 +57,11 @@
                     </option>
                 </select>
                 <br>
-                <label>
-                    Identificacion
-                </label>
-                <input id="identificacion" type="text" />
-                <br>
-                <label>
-                    Nombre
-                </label>
-                <input id="nombre" type="text" />
-                <br>
-                <label>
-                    Edad
-                </label>
-                <input id="edad" type="number" />
-                <br>
                 <br>
                 <button type="button" onclick="operacion()">Calcular</button>
                 <br>
                 <br>
-                <label>
+                <label id="labelpulsacion">
                     Pulsacion
                 </label>
                 <input id="pulsacion" type="number" />
