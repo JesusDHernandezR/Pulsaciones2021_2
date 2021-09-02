@@ -8,6 +8,7 @@
     <title>Calcula tu pulsacion</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="./registro.css">
+    <script type="text/javascript" src="registro.js"></script>
 </head>
 
 <body>
@@ -74,31 +75,7 @@
                 href="https://api.whatsapp.com/send?phone=573043484870&app=facebook&entry_point=page_cta">
                 <li>WHATSAPP</li>
             </a></p>
-    </footer>
-    <script>
-        function operacion() {
-            var op = document.getElementById("sexoSeleccionado").value;
-            var edad = document.getElementById("edad").value;
-            var pulsacion;
-            if (op === "f") {
-                pulsacion = CalcularPulsacionFemenina(edad);
-            } else if (op === "m") {
-                pulsacion = CalcularPulsacionMasculina(edad);
-            } else {
-                console.error("error");
-            }
-            document.getElementById("pulsacion").value = pulsacion;
-        }
-        function CalcularPulsacionFemenina(edad) {
-            var pulsacion = parseInt(220) - parseInt(edad) / parseInt(10);
-            return pulsacion;
-        }
-        function CalcularPulsacionMasculina(edad) {
-            var pulsacion = parseInt(210) - parseInt(edad) / parseInt(10);
-            return pulsacion;
-        }
-    </script>
-
+    </footer>    
 </body>
 
 </html>
